@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Accordion from './components/Accordion';
+import Dropdown from './components/Dropdown';
+import Search from './components/Search';
+import Translate from './components/Translate';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const items = [
+    {
+        title: 'What is react?',
+        content: 'react is a library'
+    },
+    {
+        title: 'what is javascript',
+        content: 'very useful for dinamic content'
+    },
+    {
+        title: 'what is jquery',
+        content: 'is a javascript framework'
+    }
+]
+
+const options = [
+
+    {
+        label: 'The Color red',
+        value: 'red'
+    },
+    {
+        label: 'The color green',
+        value: 'green'
+    },
+    {
+        label: 'A shade of blue',
+        value: 'blue'
+    }
+]
+
+// eslint-disable-next-line import/no-anonymous-default-export
+export default () =>{
+    
+    return(
+        <div> 
+           <Translate/>
+            
+        </div>)
 }
 
-export default App;
